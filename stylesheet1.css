@@ -18,26 +18,23 @@ h1 {
 	text-align: center;
 	margin-left: 350px;
 }
-/*p{
+.p1{
 	color: #FBFBFB;
 	text-align: center;
 	font-size: 20px;
 	font-family: "Microsoft YaHei UI Light"
-		}*/
-div.footer p{
-	color: #000000;
-	text-align: right;
-	font-size: 20px;
-	font-family: 'News Cycle', sans-serif;
-	opacity:1;
-}
-/*div.footer p{
+		}
+.p2 {
 	color: #FBFBFB;
 	text-align: center;
 	font-size: 15px;
 	font-family: 'News Cycle', sans-serif;
 	opacity:1;
-}*/
+	
+}
+div.footer p{
+	opacity:1;
+}
 ul {
     list-style-type: none;
     margin: 0;
