@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+background-image: url("http://onehdwallpaper.com/wp-content/uploads/2015/07/Colorful-Nature-HD-Wallpapers-Pictures.jpg");
+background-position: right top;
+}
+h1 {
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: black;
+    border-width: 2px;
+	color: #440381;
+	font-family: 'Josefin Slab', serif;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 50%;
+	align-content: center;
+	text-align: center;
+	margin-left: 350px;
+}
+/*p{
+	color: #FBFBFB;
+	text-align: center;
+	font-size: 20px;
+	font-family: "Microsoft YaHei UI Light"
+		}*/
+p1{
+	color: #FBFBFB;
+	text-align: right;
+	font-size: 20px;
+	font-family: 'News Cycle', sans-serif;
+}
+p2{
+	color: #FBFBFB;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'News Cycle', sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    border: 2px;
+    padding: 14px 30px;
+    text-decoration: none;
+	font-family: 'Abril Fatface', cursive;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+	opacity: .6;
+	/*color: #111;*/
+}
+
+.active {
+    background-color: #320e3b;
+}
+.footer {
+	color: #717171;
+	position: absolute;
+	bottom:0;
+	background-color:#707070;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
