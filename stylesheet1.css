@@ -77,3 +77,6 @@ li a:hover:not(.active) {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+div.footer p1 {
+	opacity:1;
+}
