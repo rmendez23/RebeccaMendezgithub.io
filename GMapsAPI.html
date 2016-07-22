@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Google Maps API</title>
+<style>
+#map {
+       width: 100%;
+       height: 400px;
+}
+.container {
+	width:900px;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class = "container">
+ <h3>My favorite places!</h3>
+    <div id="map"></div>
+    </div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var customMapType = new google.maps.StyledMapType([
+            {
+				featureType: "all",
+                stylers: [{ saturation: -80 }]
+            },
+            {
+             featureType: "road.arterial",
+			  elementType: "geometry",
+			  stylers: [
+				{ hue: "#00ffee" },
+				{ saturation: 50 }
+			  ]
+            },
+            {
+              featureType: "poi.business",
+			  elementType: "labels",
+			  stylers: [{ visibility: "off" }]
+            }
+          ], {
+            name: 'Custom Style'
+        });
+	var customMapTypeId = 'custom_style';
+	var myLatLng = {lat: 19.432992, lng: -99.138923};
+	var map = new google.maps.Map(document.getElementById('map'), {
+	  zoom: 12,
+	  center: myLatLng,
+	  mapTypeControlOptions: {mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]}
+	});
+	 map.mapTypes.set(customMapTypeId, customMapType);
+	map.setMapTypeId(customMapTypeId);
+
+  //var map = new google.maps.Map(document.getElementById('map'), {
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Mexico City'
+  });
+  var marker2 = new google.maps.Marker({
+    position: {lat: 42.390316, lng: -71.132859},
+    map: map,
+    title: "Jose's Mexican Restaurant"
+  });
+  var marker3 = new google.maps.Marker({
+    position: {lat: -34.605006, lng: -58.374965},
+    map: map,
+    title: "Jose's Mexican Restaurant"
+  });
+	  }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+    
+
+
+</body>
+</html>
